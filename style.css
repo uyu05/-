@@ -1,0 +1,76 @@
+body {
+  font-family: "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 1em;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.6em;
+  margin-bottom: 1.5em;
+  color: #2c3e50;
+}
+
+.question {
+  background-color: #fff;
+  border-left: 6px solid #3498db;
+  padding: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  border-radius: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header h3 {
+  margin: 0;
+  font-size: 1.1em;
+  color: #2980b9;
+}
+
+.difficulty {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.stars {
+  color: #f39c12;
+  letter-spacing: 2px;
+}
+
+.question p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 0.5em 0;
+}
+
+/* スマホ対応 */
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0.5em;
+  }
+
+  .question {
+    padding: 0.8em;
+  }
+
+  h1 {
+    font-size: 1.4em;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .difficulty {
+    margin-top: 0.5em;
+  }
+}

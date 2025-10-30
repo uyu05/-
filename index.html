@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  <meta charset="UTF-8">
+  <title>数学チャレンジ</title>
+  <link rel="stylesheet" href="style.css"> <!-- CSSファイルを読み込む -->
+</head>
+<body>
+  <h1>🧠 数学チャレンジ！</h1>
+
+  <div class="question">
+  <h3>問題①</h3>
+  <div class="difficulty">難易度：<span class="stars">★★☆☆☆</span></div>
+  <div class="hint-area">
+    <button onclick="showHint('hint1', this)">ヒントを見る</button>
+    <p id="hint1" style="display: none;">オイラーの公式って検索してみよー</p>
+  </div>
+  <p>\[
+      -e^{i\pi} = ?
+    \]
+</p>
+</div>
+
+<div class="question">
+  <h3>問題②</h3>
+  <div class="difficulty">難易度：<span class="stars">★☆☆☆☆</span></div>
+  <div class="hint-area">
+    <button onclick="showHint('hint2', this)">ヒントを見る</button>
+    <p id="hint2" style="display: none;">9 は 3 の 2乗だよ！</p>
+  </div>
+  <p>次の方程式を満たす \( x \) の値を求めよ。</p>
+  <p>
+    \[
+      \sqrt{x} = 3
+    \]
+  </p>
+
+</div>
+
+<!-- 問題③以降も同様に hint3, hint4... と続けていく -->
+
+  <div class="question">
+    <h3>問題③</h3>
+    <div class="difficulty">難易度：<span class="stars">★☆☆☆☆</span></div>
+    <div class="hint-area">
+    <button onclick="showHint('hint3', this)">ヒントを見る</button>
+    <p id="hint3" style="display: none;">コインが横向きに立つとかは考慮しないでねー</p>
+  </div>
+  <p>コインを投げた時、表か裏が出る確率は？</p>
+  </div>
+
+<div class="question">
+    <h3>問題④</h3>
+    <div class="difficulty">難易度：<span class="stars">★★★☆☆</span></div>
+    <div class="hint-area">
+    <button onclick="showHint('hint4', this)">ヒントを見る</button>
+    <p id="hint4" style="display: none;">微分するだけだよ！</p>
+  </div>
+    <p>関数 \( f(x) = 2x^3 - 5x + 3 \) に対して、点 \( x = 2 \) における微分係数を求めよ。</p>
+  </div>
+
+  <div class="question">
+  <h3>【問題】</h3>
+  <div class="difficulty">難易度：<span class="stars">★★★☆☆</span></div>
+  <div class="hint-area">
+    <button onclick="showHint('hint5', this)">ヒントを見る</button>
+    <p id="hint5" style="display: none;">tanxをsinx/cosxに変形してみよう！</p>
+  </div>
+  <p>次の極限を求めよ。</p>
+  <p>
+    \[
+      \lim_{x \to 0} \frac{\tan x}{x}
+    \]
+  </p>
+</div>
+
+  <div class="question">
+    <h3>問題⑥</h3>
+    <div class="difficulty">難易度：<span class="stars">★★★☆☆</span></div>
+    <div class="hint-area">
+    <button onclick="showHint('hint6', this)">ヒントを見る</button>
+    <p id="hint6" style="display: none;">前項と比較してみよう！</p>
+  </div>
+    <p>空欄 \( x \) に入る数を求めよ。</p>
+  <p>
+    \[
+      1,\quad 1,\quad 2,\quad 3,\quad 5,\quad 8,\quad x
+    \]
+  </p>
+
+  </div>
+
+  <div class="question">
+    <h3>問題⑦</h3>
+    <div class="difficulty">難易度：<span class="stars">★★☆☆☆</span></div>
+    <div class="hint-area">
+    <button onclick="showHint('hint7', this)">ヒントを見る</button>
+    <p id="hint7" style="display: none;">対数の定義に従おう！</p>
+  </div>
+    <p>\[
+      \log_2 4 = x,\quad \log e^3 = y \quad のとき、\quad x^y = ?
+    \]
+</p>
+  </div>
+
+  <div class="question">
+    <h3>問題⑧</h3>
+    <div class="difficulty">難易度：<span class="stars">★★★☆☆</span></div>
+    <div class="hint-area">
+    <button onclick="showHint('hint8', this)">ヒントを見る</button>
+    <p id="hint8" style="display: none;">普通に積分しよう！</p>
+  </div>
+  <p>次の定積分を求めよ。</p>
+    <p>\[
+      \int_0^3 (2x^2 + 2x - 3) \, dx
+    \]
+</p>
+  </div>
+
+  <div class="question">
+    <h3>問題⑨</h3>
+    <div class="difficulty">難易度：<span class="stars">★★★★☆</span></div>
+    <div class="hint-area">
+    <button onclick="showHint('hint9', this)">ヒントを見る</button>
+    <p id="hint9" style="display: none;">iは二乗すると-1になるよ！</p>
+  </div>
+    <p>虚数単位 \( i \) に対して、次の値を求めよ。</p>
+  <p>
+    \[
+      i^{i + i^2 + i^3 + i^4}
+    \]
+  </p>
+
+  </div>
+
+  <div class="question">
+    <h3>問題⑩</h3>
+    <div class="difficulty">難易度：<span class="stars">★★☆☆☆</span></div>
+    <div class="hint-area">
+    <button onclick="showHint('hint10', this)">ヒントを見る</button>
+    <p id="hint10" style="display: none;">メルセンヌ素数ってのは2^n-1のことだよ！</p>
+  </div>
+    <p>n=3のときのメルセンヌ素数を求めよ。</p>
+  </div>
+
+  <hr>
+
+  <h2>🔑Typing password here!!</h2>
+
+<!-- 🔍 パスワードヒント表示エリア -->
+<div class="hint-area">
+  <button onclick="togglePasswordHint(this)">パスワードのヒントを見る</button>
+  <p id="passwordHint" style="display: none;">1=A 2=B……26=Zのルールに従って各問の答えをアルファベットに！そしたら並び替えて青学に関係する単語を作ろう！</p>
+</div>
+
+<input type="text" id="keyword" placeholder="ここに入力">
+<button onclick="checkKeyword()">送信</button>
+<p id="message"></p>
+
+ <script>
+  function showHint(hintId, button) {
+    const hint = document.getElementById(hintId);
+    const isHidden = hint.style.display === "none" || hint.style.display === "";
+
+    // 表示・非表示を切り替え
+    hint.style.display = isHidden ? "block" : "none";
+
+    // ボタンのテキストを切り替え
+    button.textContent = isHidden ? "ヒントを閉じる" : "ヒントを見る";
+  }
+
+　function togglePasswordHint(button) {
+  const hint = document.getElementById("passwordHint");
+  const isHidden = hint.style.display === "none" || hint.style.display === "";
+  hint.style.display = isHidden ? "block" : "none";
+  button.textContent = isHidden ? "ヒントを閉じる" : "パスワードのヒントを見る";
+}
+
+  function checkKeyword() {
+  const input = document.getElementById("keyword").value.trim().toLowerCase();
+  const correct = "sagamihara";
+
+  if (input === correct) {
+    window.location.href = "prize.html"; // ✅ 正しいパスワードならこのページへ移動
+  } else {
+    document.getElementById("message").textContent = "おめでとう！ぜひ相模原キャンパスへ！";
+  }
+}
+
+</script>
+</body>
+</html>
